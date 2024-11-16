@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.68 (w)1999-2016 BSI
+[*] Wed Oct 18 09:29:08 2017
+[*]
+[dumpfile] "/data/labs/marsrover-2017-2018/vhdl/tutorial/calculator/calculator_tb.ghw"
+[dumpfile_mtime] "Wed Oct 18 09:21:37 2017"
+[dumpfile_size] 55003257
+[savefile] "/data/labs/marsrover-2017-2018/vhdl/tutorial/calculator/calculator_tb.sav"
+[timestart] 0
+[size] 1920 1013
+[pos] -2 -79
+*-43.254517 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.calculator_tb.
+[sst_width] 224
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 287
+@28
+top.calculator_tb.clk
+@22
+#{switches[7:0]} top.calculator_tb.switches[7] top.calculator_tb.switches[6] top.calculator_tb.switches[5] top.calculator_tb.switches[4] top.calculator_tb.switches[3] top.calculator_tb.switches[2] top.calculator_tb.switches[1] top.calculator_tb.switches[0]
+@28
+#{buttons[3:0]} top.calculator_tb.buttons[3] top.calculator_tb.buttons[2] top.calculator_tb.buttons[1] top.calculator_tb.buttons[0]
+@22
+#{top.calculator_tb.lbl0.lbl_mux_8bit_4input_4sel.output[7:0]} top.calculator_tb.lbl0.lbl_mux_8bit_4input_4sel.output[7] top.calculator_tb.lbl0.lbl_mux_8bit_4input_4sel.output[6] top.calculator_tb.lbl0.lbl_mux_8bit_4input_4sel.output[5] top.calculator_tb.lbl0.lbl_mux_8bit_4input_4sel.output[4] top.calculator_tb.lbl0.lbl_mux_8bit_4input_4sel.output[3] top.calculator_tb.lbl0.lbl_mux_8bit_4input_4sel.output[2] top.calculator_tb.lbl0.lbl_mux_8bit_4input_4sel.output[1] top.calculator_tb.lbl0.lbl_mux_8bit_4input_4sel.output[0]
+[pattern_trace] 1
+[pattern_trace] 0
