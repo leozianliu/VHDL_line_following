@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -39,14 +40,16 @@ entity comparator is
 end comparator;
 
 architecture Behavioral of comparator is
-
 begin
-
-    if (input_0 < input_1) then
-        output <= '11111111';
-    elsif (input_0 = input_1) then
-        output <= '00000000';
-    elsif (input_0 > input_1) then
-        output <= '00010001';
-
-end Behavioral;
+    process(input_0, input_1)
+    begin
+    if input_0 < input_1 then
+        output <= "11111111";
+    elsif input_0 = input_1 then
+        output <= "00000000";
+    --elsif input_0 > input_1 then
+    else
+        output <= "00010001";
+    end if;
+    end process;
+end architecture Behavioral;

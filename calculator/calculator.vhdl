@@ -57,6 +57,7 @@ architecture structural of calculator is
 			output_0			: out	std_logic_vector (3 downto 0);
 			output_1			: out	std_logic_vector (3 downto 0)
 		);
+	end component and_or;
 		
 	component nand_nor is
         port (	input_0			: in	std_logic_vector (3 downto 0);
@@ -64,6 +65,7 @@ architecture structural of calculator is
 			output_0			: out	std_logic_vector (3 downto 0);
 			output_1			: out	std_logic_vector (3 downto 0)
 		);
+	end component nand_nor;
 	
 	component xor_xnor is
         port (	input_0			: in	std_logic_vector (3 downto 0);
@@ -71,12 +73,15 @@ architecture structural of calculator is
 			output_0			: out	std_logic_vector (3 downto 0);
 			output_1			: out	std_logic_vector (3 downto 0)
 		);
+		
+	end component xor_xnor;
 	
 	component comparator is
         port (	input_0			: in	std_logic_vector (3 downto 0);
 			input_1			: in	std_logic_vector (3 downto 0);
 			output			: out	std_logic_vector (7 downto 0)
 		);
+	end component comparator;
 
 	component mux_8bit_4input_4sel is
 		port (	input_0			: in	std_logic_vector (7 downto 0);

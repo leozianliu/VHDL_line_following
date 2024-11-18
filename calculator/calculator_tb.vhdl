@@ -11,7 +11,7 @@ architecture structural of calculator_tb is
 
 			reset_button	: in	std_logic;
 			buttons		: in	std_logic_vector (3 downto 0);
-			switches	: in	std_logic_vector (7 downto 0);
+			switches	: in	std_logic_vector (8 downto 0);
 
 			display_data	: out	std_logic_vector (7 downto 0);
 			display_enable	: out	std_logic_vector (3 downto 0)
@@ -21,7 +21,7 @@ architecture structural of calculator_tb is
 	signal	clk			: std_logic;
 	signal	reset_button		: std_logic;
 	signal	buttons			: std_logic_vector (3 downto 0);
-	signal	switches		: std_logic_vector (7 downto 0);
+	signal	switches		: std_logic_vector (8 downto 0);
 	signal	display_data		: std_logic_vector (7 downto 0);
 	signal	display_enable		: std_logic_vector (3 downto 0);
 
@@ -42,7 +42,7 @@ lbl0:	calculator	port map (	clk		=> clk,
 	reset_button	<=	'1' after 0 ns,
 				'0' after 40 ns;
 
-	switches	<=	"10100010" after 0 ns;
+	switches	<=	"110100010" after 0 ns;
 
 	buttons		<=	"0000" after  0 ns,
 				"1000" after 40 ns,

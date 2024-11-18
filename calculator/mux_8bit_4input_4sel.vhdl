@@ -19,7 +19,7 @@ end entity mux_8bit_4input_4sel;
 architecture behavioural of mux_8bit_4input_4sel is
 begin
 
-	process (input_0, input_1, input_2, input_3, sel)
+	process (input_0, input_1, input_2, input_3, input_4, input_5, input_6, input_7, sel)
 	begin
 		case sel is
 			when "01000"	=> output <= input_0;
