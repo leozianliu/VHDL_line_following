@@ -36,6 +36,7 @@ reset <= '1' after 0 ns,
 	'0' after 20000040 ns;
 
 direction <= '0' after 0 ns;
+direction <= '1'
 
 lbl0: counter port map (clk => clk,
 			reset => reset,
