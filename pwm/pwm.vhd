@@ -28,16 +28,16 @@ begin
 	end if;
 end process;
 
-comb_logic: process(current_state, T)
+comb_logic: process(current_state, clk, count_in, direction, reset)
 begin
 
 	case current_state is
 
 		when wait_state => pwm <= '1';
 			if direction = '1' then
-        T <= resize(to_unsigned(2, T'length) * 100000, T'length);
+        T <= to_unsigned(200000, T'length); -- 2ms
     else
-        T <= resize(to_unsigned(1, T'length) * 100000, T'length);
+        T <= to_unsigned(100000, T'length); -- 1ms
     end if;
 			if unsigned(count_in) < T then
 			next_state <= wait_state;
@@ -48,7 +48,7 @@ begin
 			if reset='1' then
 			next_state <= wait_state;
 			else next_state <= reset_state;
-			end if ;
+			end if;
 	end case;
 end process;
 	

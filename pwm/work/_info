@@ -1,0 +1,266 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm
+T_opt
+!s110 1732266686
+VAUBS[MKTYMiDk68FVKnWd1
+04 6 10 work pwm_tb structural 1
+=1-745d229c4709-67404abe-1fc-e560
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;10.6g;65
+R0
+Eadder
+Z1 w1731934199
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/adder_but_cooler.vhd
+Z6 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/adder_but_cooler.vhd
+l0
+L5
+VzLfDVe<]Q:OYSMfNdbkff2
+!s100 o2OT3cPbho:b?zI=WJ`d^0
+Z7 OL;C;10.6g;65
+32
+Z8 !s110 1732269438
+!i10b 1
+Z9 !s108 1732269437.000000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/adder_but_cooler.vhd|
+Z11 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/adder_but_cooler.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioural
+R2
+R3
+R4
+DEx4 work 5 adder 0 22 zLfDVe<]Q:OYSMfNdbkff2
+32
+R8
+l14
+L12
+Vj1Ie0[_9d5O^3eTc4]C921
+!s100 nZPab1bU;zE@XQNlFMF@G2
+R7
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ecounter
+R1
+R2
+R3
+R4
+R0
+Z14 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/counter.vhd
+Z15 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/counter.vhd
+l0
+L5
+V:[[XK6knM_hn^Q@Nk>Po53
+!s100 Jdo3Bi_@NNXWNUHW64:RM1
+R7
+32
+R8
+!i10b 1
+Z16 !s108 1732269438.000000
+Z17 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/counter.vhd|
+Z18 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/counter.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 7 counter 0 22 :[[XK6knM_hn^Q@Nk>Po53
+32
+R8
+l30
+L14
+VAbSn?Yo;m53[Cfb;bHo6^2
+!s100 FmBPT[BfVU?mbFkFFPP@=2
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R12
+R13
+Ecounter_tb
+R1
+R2
+R3
+R4
+R0
+Z19 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/counter_tb.vhd
+Z20 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/counter_tb.vhd
+l0
+L5
+V83W^U>IQ2;oKOUR<g[lj02
+!s100 3XQ6d1hHFK7>HBH>[cGLZ3
+R7
+32
+R8
+!i10b 1
+R16
+Z21 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/counter_tb.vhd|
+Z22 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/counter_tb.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 10 counter_tb 0 22 83W^U>IQ2;oKOUR<g[lj02
+l19
+L8
+V?SG6YZzN==WUFYffO;NY32
+!s100 dhVzG4<=Z<g5N5mA_76iT2
+R7
+32
+R8
+!i10b 1
+R16
+R21
+R22
+!i113 0
+R12
+R13
+Epwm_generator
+Z23 w1732269423
+R2
+R3
+R4
+R0
+Z24 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/pwm.vhd
+Z25 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/pwm.vhd
+l0
+L5
+V]hCmY7SRnOHPMKIjWFI;c2
+!s100 KFMa`]n]jXT67bUlK>RZz1
+R7
+32
+R8
+!i10b 1
+R16
+Z26 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/pwm.vhd|
+Z27 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/pwm.vhd|
+!i113 0
+R12
+R13
+Abehavioural
+R2
+R3
+R4
+DEx4 work 13 pwm_generator 0 22 ]hCmY7SRnOHPMKIjWFI;c2
+32
+R8
+l22
+L14
+VfZcA=ZlgSi1VUTQ7;:^ML0
+!s100 jf;>z4ShTW5llXalbdJQW1
+R7
+!i10b 1
+R16
+R26
+R27
+!i113 0
+R12
+R13
+Epwm_tb
+Z28 w1732269042
+R2
+R3
+R4
+R0
+Z29 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/pwm_tb.vhd
+Z30 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/pwm_tb.vhd
+l0
+L5
+VZNERaLO7abjo2k[CR:k`T0
+!s100 oFhWlcYgXj6TFKZ_VdB1Y2
+R7
+32
+R8
+!i10b 1
+R16
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/pwm_tb.vhd|
+Z32 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/pwm_tb.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 6 pwm_tb 0 22 ZNERaLO7abjo2k[CR:k`T0
+32
+R8
+l28
+L8
+VN@f01B5GbV_<BV@YgVW[c3
+!s100 gEh485hi4iR:A22Q^eESd3
+R7
+!i10b 1
+R16
+R31
+R32
+!i113 0
+R12
+R13
+Ereg
+R1
+R2
+R3
+R4
+R0
+Z33 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/register.vhd
+Z34 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/register.vhd
+l0
+L5
+VMBiNl_Z9PVQYe=iPn6]^O3
+!s100 eKhB<b964M;OWSW<nOWE61
+R7
+32
+R8
+!i10b 1
+R16
+Z35 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/register.vhd|
+Z36 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/pwm/register.vhd|
+!i113 0
+R12
+R13
+Abehavioural
+R2
+R3
+R4
+DEx4 work 3 reg 0 22 MBiNl_Z9PVQYe=iPn6]^O3
+32
+R8
+l17
+L15
+V[zblKA]<?C7`5zafiL?lS0
+!s100 [Mnj2QYEE<S_2N6iGz4^L0
+R7
+!i10b 1
+R16
+R35
+R36
+!i113 0
+R12
+R13
