@@ -28,7 +28,7 @@ begin
 	end if;
 end process;
 
-comb_logic: process(current_state, T)
+comb_logic: process(current_state, clk)
 begin
 
 	case current_state is
