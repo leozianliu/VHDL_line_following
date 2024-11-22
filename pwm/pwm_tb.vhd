@@ -22,7 +22,7 @@ architecture structural of pwm_tb is
 			count_out:   out std_logic_vector (20 downto 0));
 	end component counter;
 
-signal clk, reset, direction, reset_state : std_logic;
+signal clk, reset, direction, output: std_logic;
 signal count: std_logic_vector (20 downto 0);
 
 begin
@@ -45,6 +45,6 @@ lbl1: pwm port map (clk => clk,
 			reset => reset,
 			direction => direction,
 			count_in => count,
-			pwm => reset_state);
+			pwm => output);
 
 end architecture structural;
