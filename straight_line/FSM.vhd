@@ -39,7 +39,7 @@ begin
     end if;
 end process;
  
-process(State, c0, c1, c2, Drive) is
+process(State, c0, c1, c2) is
 begin
     NextState <= State;
  
@@ -93,6 +93,5 @@ end if;
                         dir2<='1';
                         reset2<='0';
  	end case;
-    end case;
 end process; 
 end architecture behavioural;
