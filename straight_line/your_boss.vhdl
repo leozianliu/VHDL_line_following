@@ -9,131 +9,121 @@ use work.pwm_generator;
 
 entity your_boss is
 	port (	clk		: in	std_logic;
-		sensor_l_in	: in	std_logic;
-		sensor_m_in	: in	std_logic;
-		sensor_r_in	: in	std_logic;
+		sensor_in	: in	std_logic_vector(2 downto 0);
 		reset		: in	std_logic;
 
-		pwm_l		: out	std_logic;
-		pwm_r		: out	std_logic;
+		motor_r_pwm		: out	std_logic;
+		motor_l_pwm		: out	std_logic;
 	);
 end entity your_boss;
 
 architecture structural of your_boss is
-	component controller is
+	component fsm_controller is
 	port (	clk			: in	std_logic;
 		reset			: in	std_logic;
 
-		sensor_l		: in	std_logic;
-		sensor_m		: in	std_logic;
-		sensor_r		: in	std_logic;
+		timeup			: in	std_logic;
 
-		count_in		: in	std_logic_vector (?? downto 0);
-		count_reset		: out	std_logic;
+        c0				: in std_logic; 
+        c1				: in std_logic;
+        c2				: in std_logic;
 
-		motor_l_reset		: out	std_logic;
-		motor_l_direction	: out	std_logic;
+		dir1			: out	std_logic;
+		dir2			: out	std_logic;
 
-		motor_r_reset		: out	std_logic;
-		motor_r_direction	: out	std_logic
+		reset1			: out	std_logic;
+		reset2			: out	std_logic
 	);
-	end component controller;
+	end component fsm_controller;
 
-	component counter is
-	port (	clk		: in	std_logic;
-		reset		: in	std_logic;
+	-- component counter is
+	-- port (	clk		: in	std_logic;
+	-- 	reset		: in	std_logic;
 
-		count_out	: out	std_logic_vector (?? downto 0)
-	);
-	end component counter;
+	-- 	count_out	: out	std_logic_vector (?? downto 0)
+	-- );
+	-- end component counter;
 			
-	component input_buffer is
-	port (	clk		: in	std_logic;
-
-		sensor_l_in	: in	std_logic;
-		sensor_m_in	: in	std_logic;
-		sensor_r_in	: in	std_logic;
-
-		sensor_l_out	: out	std_logic;
-		sensor_m_out	: out	std_logic;
-		sensor_r_out	: out	std_logic
+	component buffer_entity is
+	port (	clk			: in	std_logic;
+			reset		: in	std_logic;
+			d			: in std_logic_vector(2 downto 0);
+			q			: out std_logic_vector(2 downto 0)
 	);
-	end component input_buffer;
+	end component buffer_entity;
 
-	component pwm_generator is
-	port (	clk		: in	std_logic;
-		reset		: in	std_logic;
-		direction	: in	std_logic;
-		count_in	: in	std_logic_vector (?? downto 0);
+	component pwm_middleman is
+	port (	clk			: in	std_logic;
 
-		pwm		: out	std_logic
-	);
-	end component pwm_generator;
+        	reset1		: in	std_logic;
+			reset2		: in	std_logic;
+			dir1		: in	std_logic;
+			dir2        : in    std_logic;
 
-	signal sig_sensor_l : std_logic, sig_sensor_m : std_logic, sig_sensor_r : std_logic;
-	signal sig_counter_out : std_logic_vector (?? downto 0), sig_count_reset : std_logic;
+			motor_r_pwm	: out	std_logic;
+			motor_l_pwm	: out	std_logic;
+			timeup_fsm  : out std_logic;
+    );
+	end component pwm_middleman;
+
+	signal sig_sensor : std_logic_vector (2 downto 0);
+	signal timeup : std_logic; -- fsm state trans signal
 	signal sig_motor_r_reset : std_logic, sig_motor_l_reset : std_logic, sig_motor_r_direction : std_logic, sig_motor_l_direction : std_logic;
 
 begin
-	u1: input_buffer
+	process(clk) is
+    begin
+
+	sig_sensor_l <= sig_sensor(0);
+	sig_sensor_m <= sig_sensor(1);
+	sig_sensor_r <= sig_sensor(2);
+
+	u1: buffer_entity
 	port map (
 		clk => clk,
+		d => sensor_in, -- in
 
-		sensor_l_in => sensor_l_in, -- in
-		sensor_m_in => sensor_m_in, -- in
-		sensor_r_in => sensor_r_in, -- in
-
-		sensor_l_out => sig_sensor_l, -- out
-		sensor_m_out => sig_sensor_m, -- out
-		sensor_r_out => sig_sensor_r, -- out
+		q => sig_sensor -- out
 		);
 
-	u2: controller
+	u2: fsm_controller
 	port map (	
 		clk => clk,
 		reset => reset,
+		timeup => timeup, -- in from pwm_middleman
 
-		sensor_l => sig_sensor_l, -- in
-		sensor_m => sig_sensor_m, -- in
-		sensor_r => sig_sensor_r, -- in
+		c0 => sig_sensor_l, -- in
+		c1 => sig_sensor_m, -- in
+		c2 => sig_sensor_r, -- in
 
-		count_in => sig_counter_out, -- in from counter
-		count_reset => sig_count_reset, -- out to counter
+		dir1 => sig_motor_r_direction, -- out
+		dir2 => sig_motor_l_direction, -- out
 
-		motor_l_reset => sig_motor_l_reset, -- out
-		motor_l_direction => sig_motor_l_direction, -- out
-
-		motor_r_reset => sig_motor_r_reset, -- out
-		motor_r_direction => sig_motor_r_direction -- out
+		reset1 => sig_motor_r_reset, -- out
+		reset2 => sig_motor_l_reset -- out
 	);
 
-	u3: counter
-	port map (
-		clk => clk,
-		reset => sig_count_reset,
+	-- u3: counter
+	-- port map (
+	-- 	clk => clk,
+	-- 	reset => sig_count_reset,
 
-		count_out => sig_counter_out; -- out
-	);
-	end component counter;
+	-- 	count_out => sig_counter_out; -- out
+	-- );
+	-- end component counter;
 
-	u4: pwm_generator -- left servo
+	u3: pwm_middleman -- left servo
 	port map (	
 		clk => clk,
-		reset => sig_motor_l_reset,
-		direction => sig_motor_l_direction,
-		count_in => sig_counter_out,
+		reset1 => sig_motor_r_reset,
+		reset2 => sig_motor_l_reset,
+		dir1 => sig_motor_r_direction,
+		dir2 => sig_motor_l_direction,
 
-		pwm => pwm_l -- out
+		motor_r_pwm => motor_r_pwm -- out to servos
+		motor_l_pwm => motor_l_pwm -- out to servos
+		timeup_fsm => timeup -- out to fsm_controller
 	);
 
-	u5: pwm_generator -- right servo
-	port map (	
-		clk => clk,
-		reset => sig_motor_r_reset,
-		direction => sig_motor_r_direction,
-		count_in => sig_counter_out,
-
-		pwm => pwm_r -- out
-	);
-
+	end process;
 end structural;

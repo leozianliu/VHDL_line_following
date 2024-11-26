@@ -22,17 +22,17 @@ set_property PACKAGE_PIN L2 [get_ports motor_l_pwm]
 set_property IOSTANDARD LVCMOS33 [get_ports motor_l_pwm]
 
 ### Header JXADC, sensor connections
-set_property PACKAGE_PIN J3 [get_ports sensor_r_in]
-set_property IOSTANDARD LVCMOS33 [get_ports sensor_r_in]
-set_property PACKAGE_PIN L3 [get_ports sensor_m_in]
-set_property IOSTANDARD LVCMOS33 [get_ports sensor_m_in]
-set_property PACKAGE_PIN M2 [get_ports sensor_l_in]
-set_property IOSTANDARD LVCMOS33 [get_ports sensor_l_in]
+set_property PACKAGE_PIN J3 [get_ports {sensor_in[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sensor_in[0]}]
+set_property PACKAGE_PIN L3 [get_ports {sensor_in[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sensor_in[1]}]
+set_property PACKAGE_PIN M2 [get_ports {sensor_in[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sensor_in[2]}]
 
 
 ## Switches
-#set_property PACKAGE_PIN V17 [get_ports {sw[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {sw[0]}]
+set_property PACKAGE_PIN V17 [get_ports reset]
+set_property IOSTANDARD LVCMOS33 [get_ports reset]
 #set_property PACKAGE_PIN V16 [get_ports {sw[1]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {sw[1]}]
 #set_property PACKAGE_PIN W16 [get_ports {sw[2]}]
