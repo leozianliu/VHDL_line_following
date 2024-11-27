@@ -12,7 +12,7 @@ entity pwm_middleman is
 
         motor_r_pwm	: out	std_logic;
         motor_l_pwm	: out	std_logic;
-		timeup_fsm  : out std_logic
+		timeup_fsm  : out std_logic;
     );
 end entity pwm_middleman;
 

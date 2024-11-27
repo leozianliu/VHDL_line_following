@@ -1,11 +1,5 @@
 library IEEE;
-library work;
-
-use work.controller;
-use work.counter;
-use work.input_buffer;
-use work.pwm_generator;
-
+use IEEE.std_logic_1164.all;
 
 entity your_boss is
 	port (	clk		: in	std_logic;
@@ -13,7 +7,7 @@ entity your_boss is
 		reset		: in	std_logic;
 
 		motor_r_pwm		: out	std_logic;
-		motor_l_pwm		: out	std_logic;
+		motor_l_pwm		: out	std_logic
 	);
 end entity your_boss;
 
@@ -62,25 +56,27 @@ architecture structural of your_boss is
 
 			motor_r_pwm	: out	std_logic;
 			motor_l_pwm	: out	std_logic;
-			timeup_fsm  : out std_logic;
+			timeup_fsm  : out std_logic
     );
 	end component pwm_middleman;
 
-	signal sig_sensor : std_logic_vector (2 downto 0);
+	signal sig_sensor : std_logic_vector (2 downto 0); 
+	signal sig_sensor_l, sig_sensor_m, sig_sensor_r : std_logic;
 	signal timeup : std_logic; -- fsm state trans signal
-	signal sig_motor_r_reset : std_logic, sig_motor_l_reset : std_logic, sig_motor_r_direction : std_logic, sig_motor_l_direction : std_logic;
+	signal sig_motor_r_reset, sig_motor_l_reset, sig_motor_r_direction ,sig_motor_l_direction : std_logic;
 
 begin
 	process(clk) is
     begin
-
-	sig_sensor_l <= sig_sensor(0);
-	sig_sensor_m <= sig_sensor(1);
-	sig_sensor_r <= sig_sensor(2);
+		sig_sensor_l <= sig_sensor(0);
+		sig_sensor_m <= sig_sensor(1);
+		sig_sensor_r <= sig_sensor(2);
+	end process;
 
 	u1: buffer_entity
 	port map (
 		clk => clk,
+		reset => reset,
 		d => sensor_in, -- in
 
 		q => sig_sensor -- out
@@ -120,10 +116,9 @@ begin
 		dir1 => sig_motor_r_direction,
 		dir2 => sig_motor_l_direction,
 
-		motor_r_pwm => motor_r_pwm -- out to servos
-		motor_l_pwm => motor_l_pwm -- out to servos
+		motor_r_pwm => motor_r_pwm, -- out to servos
+		motor_l_pwm => motor_l_pwm, -- out to servos
 		timeup_fsm => timeup -- out to fsm_controller
 	);
 
-	end process;
 end structural;
