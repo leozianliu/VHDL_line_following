@@ -1,6 +1,8 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+-- important!!!
+-- reset1/2 = 0 is stopping pwm generation
 
 entity pwm_middleman is
     port (	clk		: in	std_logic;
@@ -40,7 +42,7 @@ signal motor_r_pwm_sig, motor_l_pwm_sig: std_logic;
 begin
 
 direction1 <= dir1; -- right motor
-direction2 <= not dir2; -- sign fix for the left motor
+direction2 <= dir2; -- sign fix for the left motor
 
 process(clk)
 begin

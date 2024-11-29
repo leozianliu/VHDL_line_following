@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 entity your_boss is
 	port (	clk		: in	std_logic;
@@ -7,7 +8,8 @@ entity your_boss is
 		reset		: in	std_logic;
 
 		motor_r_pwm		: out	std_logic;
-		motor_l_pwm		: out	std_logic
+		motor_l_pwm		: out	std_logic;
+		leds            : out   std_logic_vector(2 downto 0)
 	);
 end entity your_boss;
 
@@ -26,7 +28,8 @@ architecture structural of your_boss is
 		dir2			: out	std_logic;
 
 		reset1			: out	std_logic;
-		reset2			: out	std_logic
+		reset2			: out	std_logic;
+		leds            : out   std_logic_vector(2 downto 0)
 	);
 	end component fsm_controller;
 
@@ -66,17 +69,18 @@ architecture structural of your_boss is
 	signal sig_motor_r_reset, sig_motor_l_reset, sig_motor_r_direction ,sig_motor_l_direction : std_logic;
 
 begin
-	process(clk) is
-    begin
-		sig_sensor_l <= sig_sensor(0);
-		sig_sensor_m <= sig_sensor(1);
-		sig_sensor_r <= sig_sensor(2);
-	end process;
+--	process(clk) is
+--    begin
+----		sig_sensor_l <= sig_sensor(0);
+----		sig_sensor_m <= sig_sensor(1);
+----		sig_sensor_r <= sig_sensor(2);
+--    leds <= sig_sensor;
+--	end process;
 
 	u1: buffer_entity
 	port map (
 		clk => clk,
-		reset => reset,
+		reset => '0',
 		d => sensor_in, -- in
 
 		q => sig_sensor -- out
@@ -88,16 +92,17 @@ begin
 		reset => reset,
 		timeup => timeup, -- in from pwm_middleman
 
-		c0 => sig_sensor_l, -- in
-		c1 => sig_sensor_m, -- in
-		c2 => sig_sensor_r, -- in
+		c0 => sig_sensor(0), -- in
+		c1 => sig_sensor(1), -- in
+		c2 => sig_sensor(2), -- in
 
 		dir1 => sig_motor_r_direction, -- out
 		dir2 => sig_motor_l_direction, -- out
 
 		reset1 => sig_motor_r_reset, -- out
-		reset2 => sig_motor_l_reset -- out
-	);
+		reset2 => sig_motor_l_reset, -- out
+		leds => leds -- out
+	   );
 
 	-- u3: counter
 	-- port map (

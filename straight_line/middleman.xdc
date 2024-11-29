@@ -31,14 +31,14 @@ set_property IOSTANDARD LVCMOS33 [get_ports {sensor_in[2]}]
 
 
 ## Switches
-set_property PACKAGE_PIN V17 [get_ports reset]
-set_property IOSTANDARD LVCMOS33 [get_ports reset]
-#set_property PACKAGE_PIN V16 [get_ports {sw[1]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {sw[1]}]
-#set_property PACKAGE_PIN W16 [get_ports {sw[2]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {sw[2]}]
-#set_property PACKAGE_PIN W17 [get_ports {sw[3]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {sw[3]}]
+set_property PACKAGE_PIN V17 [get_ports reset1]
+set_property IOSTANDARD LVCMOS33 [get_ports reset1]
+set_property PACKAGE_PIN V16 [get_ports reset2]
+set_property IOSTANDARD LVCMOS33 [get_ports reset2]
+set_property PACKAGE_PIN W16 [get_ports dir1]
+set_property IOSTANDARD LVCMOS33 [get_ports dir1]
+set_property PACKAGE_PIN W17 [get_ports dir2]
+set_property IOSTANDARD LVCMOS33 [get_ports dir2]
 #set_property PACKAGE_PIN W15 [get_ports {sw[4]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {sw[4]}]
 #set_property PACKAGE_PIN V15 [get_ports {sw[5]}]
@@ -96,8 +96,8 @@ set_property PACKAGE_PIN V13 [get_ports {leds2[5]}]
 #	set_property IOSTANDARD LVCMOS33 [get_ports {leds[13]}]
 #set_property PACKAGE_PIN P1 [get_ports {leds[14]}]
 #	set_property IOSTANDARD LVCMOS33 [get_ports {leds[14]}]
-#set_property PACKAGE_PIN L1 [get_ports {leds[15]}]
-#	set_property IOSTANDARD LVCMOS33 [get_ports {leds[15]}]
+set_property PACKAGE_PIN L1 [get_ports timeup_fsm]
+	set_property IOSTANDARD LVCMOS33 [get_ports timeup_fsm]
 
 
 ##7 segment display
