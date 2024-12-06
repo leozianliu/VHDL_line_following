@@ -20,6 +20,7 @@ architecture structural of your_boss is
 		sensor_in	: in	std_logic_vector(2 downto 0);
 		reset		: in	std_logic;
 		goto_pl_state	: in	std_logic;
+--		timeup          : in    std_logic;
 
 		dir1			: out	std_logic;
 		dir2			: out	std_logic;
@@ -117,6 +118,7 @@ begin
 		sensor_in => sig_sensor,
 		reset => reset, -- in
 		goto_pl_state => goto_pl_state_sig, -- in
+--		timeup => timeup,
 
 		dir1 => sig_motor_r_direction0, -- out
 		dir2 => sig_motor_l_direction0, -- out

@@ -6,6 +6,7 @@ entity line_finder is
 		sensor_in	: in	std_logic_vector(2 downto 0);
 		reset		: in	std_logic;
 		goto_pl_state	: in	std_logic;
+	--	timeup      : in    std_logic;
 
 		dir1			: out	std_logic;
 		dir2			: out	std_logic;
@@ -27,7 +28,8 @@ architecture behavioural of line_finder is
 begin 
 	process(clk) is
 	begin
-		if (rising_edge(clk)) then
+	--	if timeup = '1' then
+	   if rising_edge(clk) then
 			c0 <= sensor_in(0);
 			c1 <= sensor_in(1);
 			c2 <= sensor_in(2);
@@ -62,28 +64,32 @@ begin
 					NextState <= FL;
 				elsif goto_pl_state = '1' then -- has higher priority
 					NextState <= PL;
-				elsif (c0 = '0' and c1 = '1' and c2 = '0') then
+				elsif (c0 = '1' and c1 = '0' and c2 = '1') then
 					NextState <= LF;
-				elsif (c0 = '0' and c1 = '0' and c2 = '0') then
+				elsif (c0 = '1' and c1 = '1' and c2 = '1') then
 					NextState <= FL;
 				else
 					NextState <= PL;
 				end if;
 
 			when PL =>
-				reset_r <= '0';
-                reset_l <= '0';
+				motor_r <= '0';
+               	reset_r <= '1';
+                motor_l <= '1';
+                reset_l <= '1';
 				done <= '0';
 
 				if (reset = '1') then
 					NextState <= FL;
 				elsif goto_pl_state = '1' then -- has higher priority
 					NextState <= PL;
-				elsif not(c0 = '0' and c1 = '0' and c2 = '0') then
+				elsif not(c0 = '1' and c1 = '1' and c2 = '1') then
 					NextState <= PL;
 				else
-					if ((old_c0 = '0' and old_c1 = '0' and old_c2 = '1') or (old_c0 = '0' and old_c1 = '1' and old_c2 = '1')) then
+					if ((old_c0 = '1' and old_c1 = '1' and old_c2 = '0') or (old_c0 = '1' and old_c1 = '0' and old_c2 = '0')) then
 						NextState <= SR;
+                    elsif (c0 = '0' and c1 = '0' and c2 = '0') then
+                        NextState <= LF;
 					else
 						NextState <= SL;	
 					end if;
@@ -99,7 +105,7 @@ begin
 					NextState <= FL;
 				elsif goto_pl_state = '1' then -- has higher priority
 					NextState <= PL;
-				elsif (c0 = '0' and c1 = '0' and c2 = '0') then
+				elsif (c0 = '1' and c1 = '1' and c2 = '1') then
 					NextState <= SR;
 				else
 					NextState <= LF;
@@ -116,7 +122,7 @@ begin
 					NextState <= FL;
 				elsif goto_pl_state = '1' then -- has higher priority
 					NextState <= PL;
-				elsif (c0 = '0' and c1 = '0' and c2 = '0') then
+				elsif (c0 = '1' and c1 = '1' and c2 = '1') then
 					NextState <= SL;
 				else
 					NextState <= LF;
@@ -136,7 +142,7 @@ begin
 				end if;
 			end case;
 
-		if not(c0 = '0' and c1 = '0' and c2 = '0') then
+		if not(c0 = '1' and c1 = '1' and c2 = '1') then
 			old_c0 <= c0;
 			old_c1 <= c1;
 			old_c2 <= c2;
