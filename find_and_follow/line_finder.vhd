@@ -23,7 +23,7 @@ end entity line_finder;
 architecture behavioural of line_finder is 
 	type state_type is (FL, PL, SL, SR, LF);
 	signal NextState, State: state_type;
-	signal old_c0, old_c1, old_c2, c0, c1, c2, done, motor_r, motor_l, reset_r, reset_l: std_logic := '0';
+	signal old_c0, old_c1, old_c2, c0, c1, c2, done, motor_r, motor_l, reset_r, reset_l: std_logic := '1';
 
 begin 
 	process(clk) is

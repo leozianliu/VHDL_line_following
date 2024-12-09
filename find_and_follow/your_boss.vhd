@@ -48,7 +48,7 @@ architecture structural of your_boss is
 		);
 	end component line_follower;
 
-	component passline_sel is
+	component critic_sel is
 		Port ( 
 			done : in STD_LOGIC;
 			now_c   : in STD_LOGIC_VECTOR(2 downto 0);
@@ -58,7 +58,7 @@ architecture structural of your_boss is
 			sel   : out STD_LOGIC;
 			goto_pl_state : out STD_LOGIC
 		);
-	end component passline_sel;
+	end component critic_sel;
 
 	component mux2 is
 		Port ( sel : in STD_LOGIC;
@@ -145,7 +145,7 @@ begin
 		reset2 => sig_motor_l_reset1 -- out
 	);
 
-	u3: passline_sel
+	u3: critic_sel
 	port map (
 		done => find_done_sig,
 		now_c => sig_sensor,
