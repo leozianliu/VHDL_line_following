@@ -18,10 +18,10 @@ begin
     begin
 
         if done = '1' then
-            if now_c = "000" and (old_c0 = '1' or old_c1 = '1'or old_c2 = '1') then -- old_c shouldn't be 000 to reach final state in finder fsm, can detect straying in follower
+            if (now_c = "111" and ((old_c0 = '1' and old_c1 = '0' and old_c2 = '0') or (old_c0 = '0' and old_c1 = '0' and old_c2 = '1'))) then -- old_c should be wwb or bww to reach final state in finder fsm, can detect straying in follower
                 sel <= '0'; -- activate finder
                 goto_pl_state <= '1'; -- strayed away in follower, go to passline state in finder
-            else
+            else -- still sees the line or 
                 sel <= '1'; -- activate follower
                 goto_pl_state <= '0'; -- don't go to passline state
             end if;

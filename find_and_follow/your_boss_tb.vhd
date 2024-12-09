@@ -30,17 +30,17 @@ clk <= '1' after 0 ns,
 reset <= '0' after 0 ns, '1' after 10 ns,
 	 '0' after 20 ns;
 
-sensor_in <= "000" after 0 ns,
-             "001" after 60 ns,
-             "011" after 90 ns,
-             "000" after 120 ns,
-             "100" after 160 ns,
-             "001" after 200 ns,
-             "011" after 240 ns,
-	     "010" after 260 ns,
-		 "011" after 300 ns,
-		 "001" after 340 ns,
-		 "000" after 380 ns;
+sensor_in <= "111" after 0 ns, -- 1 is white, 0 is black
+             "110" after 60 ns,
+             "100" after 90 ns,
+             "101" after 120 ns, -- wbw
+             "111" after 160 ns, -- www
+             "010" after 200 ns, -- bwb
+             "101" after 240 ns, -- wbw
+	     	"001" after 260 ns,
+		 	"011" after 300 ns,
+		 	"000" after 340 ns,
+		 	"000" after 380 ns;
 
 lbl0: your_boss port map(
 	clk => clk,

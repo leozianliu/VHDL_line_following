@@ -9,8 +9,8 @@ entity your_boss is
 
 		motor_r_pwm		: out	std_logic;
 		motor_l_pwm		: out	std_logic;
-		mux_sel            : out   std_logic;
-		leds           : out std_logic_vector(3 downto 0)
+		mux_sel            : out   std_logic
+	--	leds           : out std_logic_vector(3 downto 0)
 	);
 end entity your_boss;
 
@@ -101,7 +101,7 @@ architecture structural of your_boss is
 
 begin
 
-    leds <= sig_motor_r_direction_out & sig_motor_r_reset_out & sig_motor_l_direction_out & sig_motor_l_reset_out;
+   -- leds <= sig_motor_r_direction_out & sig_motor_r_reset_out & sig_motor_l_direction_out & sig_motor_l_reset_out;
 
 	 u1: buffer_entity
 	 port map (
@@ -170,9 +170,18 @@ begin
 
 	-- unpack vector
 	sig_motor_r_direction_out <= sig_motor_out(3);
-	sig_motor_r_reset_out <= sig_motor_out(2);
 	sig_motor_l_direction_out <= sig_motor_out(1);
-	sig_motor_l_reset_out <= sig_motor_out(0);
+	
+	process(reset, sig_motor_out)
+        begin
+        if reset = '1' then -- when reset is on turn off the motors
+            sig_motor_r_reset_out <= '0';
+            sig_motor_l_reset_out <= '0';
+        else
+            sig_motor_r_reset_out <= sig_motor_out(2);
+            sig_motor_l_reset_out <= sig_motor_out(0);
+        end if;
+	end process;
 
 	u5: pwm_middleman -- left servo
 	port map (	

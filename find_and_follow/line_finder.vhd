@@ -62,8 +62,6 @@ begin
 
 				if (reset = '1') then
 					NextState <= FL;
-				elsif goto_pl_state = '1' then -- has higher priority
-					NextState <= PL;
 				elsif (c0 = '1' and c1 = '0' and c2 = '1') then
 					NextState <= LF;
 				elsif (c0 = '1' and c1 = '1' and c2 = '1') then
