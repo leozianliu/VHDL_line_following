@@ -33,7 +33,7 @@ architecture structural of your_boss is
 		);
 	end component line_finder;
 
-	component line_follower is
+	component turn is
 		port (
 			clk: in std_logic;
 			reset: in std_logic;
@@ -46,7 +46,7 @@ architecture structural of your_boss is
 			reset1: out std_logic;
 			reset2: out std_logic
 		);
-	end component line_follower;
+	end component turn;
 
 	component passline_sel is
 		Port ( 
