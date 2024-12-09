@@ -20,6 +20,7 @@ end entity turn;
 architecture behavioural of turn is
     type state_type is (S0, L, R, F, SR, SL);
     signal Nextstate, State: state_type;
+	signal detection, turning: std_logic;
 
 begin
     process(clk) is
@@ -51,7 +52,7 @@ begin
                     NextState <= SL;
                 elsif (c0 = '1' and c2 = '0' and c1 = '0') then
                     NextState <= R;
-                elsif (c0 = '1' and c1 = '1' and c2 = '0') then
+                elsif ((c0 = '1' and c1 = '1' and c2 = '0') or (turning='1')) then
                     NextState <= SR;
                 else
                     NextState <= F;
@@ -62,6 +63,14 @@ begin
                 reset1 <= '1';
                 dir2 <= '1';
                 reset2 <= '1';
+		
+		if (c0 = '0' and c1 = '1' and c2 = '0') then
+                    detection <= '1';
+		end if;
+		if (c0 = '0' and c1 = '0' and c2 = '0') and detection = '1' then
+                    detection <= '0';
+		    turning <='1';
+		end if;
 
             when L =>
                 dir1 <= '0';
@@ -86,6 +95,10 @@ begin
                 reset1 <= '1';
                 dir2 <= '1';
                 reset2 <= '1';
+
+		if ((turning='1' and c0 = '1' and c1 = '0' and c2 = '1')) then
+			turning <='0';
+		end if;
         end case;
     end process;
 end architecture behavioural;
