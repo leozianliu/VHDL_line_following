@@ -10,8 +10,10 @@ entity your_boss is
 		motor_r_pwm		: out	std_logic;
 		motor_l_pwm		: out	std_logic;
 		mux_sel            : out   std_logic;
-	   led_detect           : out std_logic;
-	   led_turn             : out std_logic
+	   led_detect_r           : out std_logic;
+	   led_turn_r             : out std_logic;
+	   led_detect_l           : out std_logic;
+	   led_turn_l             : out std_logic
 	);
 end entity your_boss;
 
@@ -41,12 +43,17 @@ architecture structural of your_boss is
 			c0: in std_logic; 
 			c1: in std_logic;
 			c2: in std_logic;
+			previous_c0: in std_logic;
+			previous_c1: in std_logic;
+			previous_c2: in std_logic;
 			dir1: out std_logic;
 			dir2: out std_logic;
 			reset1: out std_logic;
 			reset2: out std_logic;
-			detection_out: out std_logic;
-            turning_out: out std_logic
+			detection_r_out: out std_logic;
+			turning_r_out: out std_logic;
+			detection_l_out: out std_logic;
+			turning_l_out: out std_logic
 		);
 	end component line_follower;
 
@@ -136,12 +143,17 @@ begin
 		c0 => sig_sensor(2), -- in
 		c1 => sig_sensor(1), -- in
 		c2 => sig_sensor(0), -- in
+		previous_c0 => previous_c0, -- in
+		previous_c1 => previous_c1, -- in
+		previous_c2 => previous_c2, -- in
 		dir1 => sig_motor_r_direction1, -- out
 		dir2 => sig_motor_l_direction1, -- out
 		reset1 => sig_motor_r_reset1, -- out
 		reset2 => sig_motor_l_reset1, -- out
-		detection_out => led_detect,
-        turning_out => led_turn
+		detection_r_out => led_detect_r,
+        turning_r_out => led_turn_r,
+		detection_l_out => led_detect_l,
+		turning_l_out => led_turn_l
 	);
 
 	u3: critic_sel

@@ -9,9 +9,8 @@ entity your_boss is
 
 		motor_r_pwm		: out	std_logic;
 		motor_l_pwm		: out	std_logic;
-		mux_sel            : out   std_logic;
-	   led_detect           : out std_logic;
-	   led_turn             : out std_logic
+		mux_sel            : out   std_logic
+	--	leds           : out std_logic_vector(3 downto 0)
 	);
 end entity your_boss;
 
@@ -20,6 +19,7 @@ architecture structural of your_boss is
 		port (	clk		: in	std_logic;
 		sensor_in	: in	std_logic_vector(2 downto 0);
 		reset		: in	std_logic;
+		goto_pl_state	: in	std_logic;
 --		timeup          : in    std_logic;
 
 		dir1			: out	std_logic;
@@ -44,22 +44,21 @@ architecture structural of your_boss is
 			dir1: out std_logic;
 			dir2: out std_logic;
 			reset1: out std_logic;
-			reset2: out std_logic;
-			detection_out: out std_logic;
-            turning_out: out std_logic
+			reset2: out std_logic
 		);
 	end component line_follower;
 
-	component critic_sel is
+	component passline_sel is
 		Port ( 
 			done : in STD_LOGIC;
 			now_c   : in STD_LOGIC_VECTOR(2 downto 0);
 			old_c0   : in STD_LOGIC;
 			old_c1   : in STD_LOGIC;
 			old_c2   : in STD_LOGIC;
-			sel   : out STD_LOGIC
+			sel   : out STD_LOGIC;
+			goto_pl_state : out STD_LOGIC
 		);
-	end component critic_sel;
+	end component passline_sel;
 
 	component mux2 is
 		Port ( sel : in STD_LOGIC;
@@ -98,9 +97,11 @@ architecture structural of your_boss is
 	signal sig_motor_r_direction1, sig_motor_l_direction1, sig_motor_r_reset1, sig_motor_l_reset1 : std_logic;
 	signal finder_output_vec, follower_output_vec, sig_motor_out : std_logic_vector(3 downto 0);
 	signal sig_motor_r_reset_out, sig_motor_l_reset_out, sig_motor_r_direction_out, sig_motor_l_direction_out : std_logic := '0';
-	signal find_done_sig, mux_sel_sig : std_logic := '0';
+	signal find_done_sig, mux_sel_sig, goto_pl_state_sig, stop_bot : std_logic := '0';
 
 begin
+
+   -- leds <= sig_motor_r_direction_out & sig_motor_r_reset_out & sig_motor_l_direction_out & sig_motor_l_reset_out;
 
 	 u1: buffer_entity
 	 port map (
@@ -116,6 +117,8 @@ begin
 		clk => clk,
 		sensor_in => sig_sensor,
 		reset => reset, -- in
+		goto_pl_state => goto_pl_state_sig, -- in
+--		timeup => timeup,
 
 		dir1 => sig_motor_r_direction0, -- out
 		dir2 => sig_motor_l_direction0, -- out
@@ -139,19 +142,18 @@ begin
 		dir1 => sig_motor_r_direction1, -- out
 		dir2 => sig_motor_l_direction1, -- out
 		reset1 => sig_motor_r_reset1, -- out
-		reset2 => sig_motor_l_reset1, -- out
-		detection_out => led_detect,
-        turning_out => led_turn
+		reset2 => sig_motor_l_reset1 -- out
 	);
 
-	u3: critic_sel
+	u3: passline_sel
 	port map (
 		done => find_done_sig,
 		now_c => sig_sensor,
 		old_c0 => previous_c0, -- in
 		old_c1 => previous_c1, -- in
 		old_c2 => previous_c2, -- in
-		sel => mux_sel_sig -- out
+		sel => mux_sel_sig, -- out
+		goto_pl_state => goto_pl_state_sig -- out
 	);
 	
 	-- pack to vector
@@ -170,9 +172,16 @@ begin
 	sig_motor_r_direction_out <= sig_motor_out(3);
 	sig_motor_l_direction_out <= sig_motor_out(1);
 	
-	process(reset, sig_motor_out)
+	process(reset, sig_motor_out, sig_sensor, previous_c0, previous_c1, previous_c2)
         begin
-        if reset = '1' then -- when reset is on turn off the motors
+       -- stop_bot <= ((sig_sensor(0) == '1') and (previous_c0 == '1') and (previous_c1 == '0') and (previous_c2 == '1'));
+        if ((sig_sensor = "111") and (previous_c0 = '1') and (previous_c1 = '0') and (previous_c2 = '1')) then
+            stop_bot <= '1' after 0 ns,
+            '0' after 5000 ms;
+        else 
+            stop_bot <= '0';
+        end if;
+        if (reset = '1' or stop_bot = '1') then -- when reset is on turn off the motors
             sig_motor_r_reset_out <= '0';
             sig_motor_l_reset_out <= '0';
         else

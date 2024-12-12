@@ -1,0 +1,114 @@
+D:/Owner/Documents/Line_follower_vhdl/mux2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/mux2.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2
+-- Compiling architecture Behavioral of mux2
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/pwm.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/pwm.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pwm_generator
+-- Compiling architecture behavioural of pwm_generator
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/3bit_register.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/3bit_register.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bit3_register
+-- Compiling architecture behavioral of bit3_register
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/counter.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/counter.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counter
+-- Compiling architecture structural of counter
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/turn.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/turn.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity line_follower
+-- Compiling architecture behavioural of line_follower
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/critic_sel.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/critic_sel.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity critic_sel
+-- Compiling architecture Behavioral of critic_sel
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/line_follower.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/line_follower.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity line_follower
+-- Compiling architecture behavioural of line_follower
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/your_boss.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/your_boss.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity your_boss
+-- Compiling architecture structural of your_boss
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/adder_but_cooler.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/adder_but_cooler.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity adder
+-- Compiling architecture behavioural of adder
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/register.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/register.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity reg
+-- Compiling architecture behavioural of reg
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/pwm_middleman.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/pwm_middleman.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pwm_middleman
+-- Compiling architecture structural of pwm_middleman
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/your_boss_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/your_boss_tb.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity your_boss_tb
+-- Compiling architecture structural of your_boss_tb
+
+} {} {}} D:/Owner/Documents/Line_follower_vhdl/buffer.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Owner/Documents/Line_follower_vhdl/buffer.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity buffer_entity
+-- Compiling architecture structural of buffer_entity
+
+} {} {}}

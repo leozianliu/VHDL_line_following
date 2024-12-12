@@ -8,38 +8,28 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Zian Liu/Desktop/chpt7/find_and_follow
-T_opt
-!s110 1733482109
-VBDT82=LA@I^2I?YkBzjJl2
-04 12 10 work your_boss_tb structural 1
-=1-745d229c4709-6752d67c-37e-d6d4
-o-quiet -auto_acc_if_foreign -work work
-tCvgOpt 0
-n@_opt
-OL;O;10.6g;65
-R0
 Eadder
 Z1 w1732867578
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-R0
-Z5 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/adder_but_cooler.vhd
-Z6 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/adder_but_cooler.vhd
+Z5 dC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow
+Z6 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/adder_but_cooler.vhd
+Z7 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/adder_but_cooler.vhd
 l0
 L5
 VzLfDVe<]Q:OYSMfNdbkff2
 !s100 o2OT3cPbho:b?zI=WJ`d^0
-Z7 OL;C;10.6g;65
+Z8 OL;C;10.6g;65
 32
-Z8 !s110 1733487897
+Z9 !s110 1734028417
 !i10b 1
-Z9 !s108 1733487897.000000
-Z10 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/adder_but_cooler.vhd|
-Z11 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/adder_but_cooler.vhd|
+Z10 !s108 1734028417.000000
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/adder_but_cooler.vhd|
+Z12 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/adder_but_cooler.vhd|
 !i113 0
-Z12 o-work work
-Z13 tExplicit 1 CvgOpt 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
 Abehavioural
 R2
 R3
@@ -49,116 +39,116 @@ l14
 L12
 Vj1Ie0[_9d5O^3eTc4]C921
 !s100 nZPab1bU;zE@XQNlFMF@G2
-R7
-32
 R8
-!i10b 1
+32
 R9
+!i10b 1
 R10
 R11
-!i113 0
 R12
+!i113 0
 R13
+R14
 Ebit3_register
-R1
+Z15 w1734027471
 R3
 R4
-R0
-Z14 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/3bit_register.vhd
-Z15 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/3bit_register.vhd
+R5
+Z16 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/3bit_register.vhd
+Z17 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/3bit_register.vhd
 l0
 L4
 VzeW4HLzaYL>`k98Z1eD_J1
 !s100 E2OKm0N]50a:iCV<=giL:0
-R7
-32
 R8
+32
+Z18 !s110 1734028416
 !i10b 1
-R9
-Z16 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/3bit_register.vhd|
-Z17 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/3bit_register.vhd|
+Z19 !s108 1734028416.000000
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/3bit_register.vhd|
+Z21 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/3bit_register.vhd|
 !i113 0
-R12
 R13
+R14
 Abehavioral
 R3
 R4
 DEx4 work 13 bit3_register 0 22 zeW4HLzaYL>`k98Z1eD_J1
+32
+R18
 l14
 L13
-VlG0>>Z2G5M1HIdWb1c3UO2
-!s100 `aM:dgUd;0ZO_AC@>k8>:0
-R7
-32
+VL_eQHA]@Zn50i6h?OTB9C2
+!s100 CYjH3McTN6CDPC9FJ7RV12
 R8
 !i10b 1
-R9
-R16
-R17
+R19
+R20
+R21
 !i113 0
-R12
 R13
+R14
 Ebuffer_entity
 R1
 R3
 R4
-R0
-Z18 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/buffer.vhd
-Z19 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/buffer.vhd
+R5
+Z22 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/buffer.vhd
+Z23 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/buffer.vhd
 l0
 L4
 VO][NJ9RDTF6l`HX2ff]Q=0
 !s100 7ODPaz=9]9a;m99RHWP;l0
-R7
-32
 R8
-!i10b 1
+32
 R9
-Z20 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/buffer.vhd|
-Z21 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/buffer.vhd|
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/buffer.vhd|
+Z25 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/buffer.vhd|
 !i113 0
-R12
 R13
+R14
 Astructural
 R3
 R4
 DEx4 work 13 buffer_entity 0 22 O][NJ9RDTF6l`HX2ff]Q=0
+32
+R9
 l25
 L13
 V4f<9a@fEaP@aZ[]`NZ;9T1
 !s100 ?DR8L?Yi8PAP4IkHS5[Hi0
-R7
-32
 R8
 !i10b 1
-R9
-R20
-R21
+R10
+R24
+R25
 !i113 0
-R12
 R13
+R14
 Ecounter
 R1
 R2
 R3
 R4
-R0
-Z22 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/counter.vhd
-Z23 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/counter.vhd
+R5
+Z26 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/counter.vhd
+Z27 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/counter.vhd
 l0
 L5
 V:[[XK6knM_hn^Q@Nk>Po53
 !s100 Jdo3Bi_@NNXWNUHW64:RM1
-R7
-32
 R8
-!i10b 1
+32
 R9
-Z24 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/counter.vhd|
-Z25 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/counter.vhd|
+!i10b 1
+R10
+Z28 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/counter.vhd|
+Z29 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/counter.vhd|
 !i113 0
-R12
 R13
+R14
 Astructural
 R2
 R3
@@ -168,117 +158,156 @@ l30
 L14
 VAbSn?Yo;m53[Cfb;bHo6^2
 !s100 FmBPT[BfVU?mbFkFFPP@=2
-R7
-32
 R8
-!i10b 1
+32
 R9
-R24
-R25
+!i10b 1
+R10
+R28
+R29
 !i113 0
-R12
 R13
-Eline_finder
-Z26 w1733483704
+R14
+Ecritic_sel
+Z30 w1734008537
 R3
 R4
-R0
-Z27 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/line_finder.vhd
-Z28 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/line_finder.vhd
+R5
+Z31 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/critic_sel.vhd
+Z32 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/critic_sel.vhd
+l0
+L4
+V4gfcWC?cN;?jH<b^_E`3M2
+!s100 Z:Cgfi16_>f[fJzE6_2@g2
+R8
+32
+R9
+!i10b 1
+R10
+Z33 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/critic_sel.vhd|
+Z34 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/critic_sel.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 10 critic_sel 0 22 4gfcWC?cN;?jH<b^_E`3M2
+l15
+L14
+V4Kj=kP^EHF>ak1HV6=jTX1
+!s100 UlZ=DfRBAJH^Bl;`KkDoP2
+R8
+32
+R9
+!i10b 1
+R10
+R33
+R34
+!i113 0
+R13
+R14
+Eline_finder
+Z35 w1733756145
+R3
+R4
+R5
+Z36 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/line_finder.vhd
+Z37 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/line_finder.vhd
 l0
 L4
 Vjd>bG13mHkE@j1WUL=JN[0
 !s100 A=1O@U4ILbQVWXk3VAPF^3
-R7
-32
 R8
-!i10b 1
+32
 R9
-Z29 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/line_finder.vhd|
-Z30 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/line_finder.vhd|
+!i10b 1
+R10
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/line_finder.vhd|
+Z39 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/line_finder.vhd|
 !i113 0
-R12
 R13
+R14
 Abehavioural
 R3
 R4
 DEx4 work 11 line_finder 0 22 jd>bG13mHkE@j1WUL=JN[0
+32
+R9
 l28
 L23
-VH?6cG3E@X?j>T?eVl3OFi2
-!s100 8_1jnb2`I7`6MU8ajRJ]c2
-R7
-32
+V_]E@8Y9Kd;cRU5fLm8:1o0
+!s100 5FZ`jjQ7Hog4jXEOm6a<A3
 R8
 !i10b 1
-R9
-R29
-R30
+R10
+R38
+R39
 !i113 0
-R12
 R13
+R14
 Eline_follower
-Z31 w1733239247
+Z40 w1734015983
 R2
 R3
 R4
-R0
-Z32 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/line_follower.vhd
-Z33 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/line_follower.vhd
+R5
+Z41 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/turn.vhd
+Z42 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/turn.vhd
 l0
 L5
-VLMT9QzZMJ:N5Y3XaoEgac1
-!s100 MhoGJf;Skz@6e`D=Zff_c2
-R7
+V5HN9aF[<:>:Z`IHHO`4LO2
+!s100 fQTPW`m`d<z9]^C7iJ5NP1
+R8
 32
-Z34 !s110 1733487898
+Z43 !s110 1734028418
 !i10b 1
-R9
-Z35 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/line_follower.vhd|
-Z36 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/line_follower.vhd|
+R10
+Z44 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/turn.vhd|
+Z45 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/turn.vhd|
 !i113 0
-R12
 R13
+R14
 Abehavioural
 R2
 R3
 R4
-DEx4 work 13 line_follower 0 22 LMT9QzZMJ:N5Y3XaoEgac1
-l24
-L20
-Vzdcaed=kOL[Mm7[EHne7V0
-!s100 VU<JX;iG@0PoIT]H4BM0T2
-R7
+DEx4 work 13 line_follower 0 22 5HN9aF[<:>:Z`IHHO`4LO2
+l27
+L22
+V2Aj]]J8MNj4f=VG>NO<Sf2
+!s100 @KOIkRSflk2=MeIbU5jg02
+R8
 32
-R34
+R43
 !i10b 1
-R9
-R35
-R36
+R10
+R44
+R45
 !i113 0
-R12
 R13
+R14
 Emux2
-Z37 w1733235306
+Z46 w1733235306
 R3
 R4
-R0
-Z38 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/mux2.vhd
-Z39 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/mux2.vhd
+R5
+Z47 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/mux2.vhd
+Z48 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/mux2.vhd
 l0
 L4
 VGH9V1HH=9]cfGbUGO2>6X2
 !s100 SC5n]DDi7N2QOc7:EFjGh2
-R7
+R8
 32
-R34
+R9
 !i10b 1
-Z40 !s108 1733487898.000000
-Z41 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/mux2.vhd|
-Z42 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/mux2.vhd|
+R10
+Z49 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/mux2.vhd|
+Z50 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/mux2.vhd|
 !i113 0
-R12
 R13
+R14
 Abehavioral
 R3
 R4
@@ -287,37 +316,37 @@ l12
 L11
 V7U5I2W1J<dSiN7O86VThS2
 !s100 TMP<bIGE2LUEF6nMg>a1O2
-R7
+R8
 32
-R34
+R9
 !i10b 1
-R40
-R41
-R42
+R10
+R49
+R50
 !i113 0
-R12
 R13
+R14
 Epassline_sel
-Z43 w1733239194
+Z51 w1733239194
 R3
 R4
 R0
-Z44 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/passline_sel.vhd
-Z45 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/passline_sel.vhd
+Z52 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/passline_sel.vhd
+Z53 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/passline_sel.vhd
 l0
 L4
 VP_=65YjBI625CZ=:KSEle3
 !s100 Oe7n[K=A6zGVT:BFc]cmA3
-R7
+R8
 32
-R34
+Z54 !s110 1733487898
 !i10b 1
-R40
-Z46 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/passline_sel.vhd|
-Z47 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/passline_sel.vhd|
+Z55 !s108 1733487898.000000
+Z56 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/passline_sel.vhd|
+Z57 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/passline_sel.vhd|
 !i113 0
-R12
 R13
+R14
 Abehavioral
 R3
 R4
@@ -326,38 +355,38 @@ l16
 L15
 V>W?PoQ1BW^^?1h9HQK=1c1
 !s100 FNTE037liWO>2C8=CZ4I;2
-R7
+R8
 32
-R34
+R54
 !i10b 1
-R40
-R46
-R47
+R55
+R56
+R57
 !i113 0
-R12
 R13
+R14
 Epwm_generator
 R1
 R2
 R3
 R4
-R0
-Z48 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/pwm.vhd
-Z49 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/pwm.vhd
+R5
+Z58 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/pwm.vhd
+Z59 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/pwm.vhd
 l0
 L5
 V]hCmY7SRnOHPMKIjWFI;c2
 !s100 KFMa`]n]jXT67bUlK>RZz1
-R7
+R8
 32
-R34
+R9
 !i10b 1
-R40
-Z50 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/pwm.vhd|
-Z51 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/pwm.vhd|
+R10
+Z60 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/pwm.vhd|
+Z61 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/pwm.vhd|
 !i113 0
-R12
 R13
+R14
 Abehavioural
 R2
 R3
@@ -367,38 +396,38 @@ l22
 L14
 VfZcA=ZlgSi1VUTQ7;:^ML0
 !s100 jf;>z4ShTW5llXalbdJQW1
-R7
+R8
 32
-R34
+R9
 !i10b 1
-R40
-R50
-R51
+R10
+R60
+R61
 !i113 0
-R12
 R13
+R14
 Epwm_middleman
-Z52 w1733183191
+Z62 w1733183191
 R2
 R3
 R4
-R0
-Z53 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/pwm_middleman.vhd
-Z54 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/pwm_middleman.vhd
+R5
+Z63 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/pwm_middleman.vhd
+Z64 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/pwm_middleman.vhd
 l0
 L7
 VS9TAn3P[8d`T0R]JcLg8T3
 !s100 dfY:B`W2mcS7k7eXN?z>g2
-R7
+R8
 32
-R34
+R9
 !i10b 1
-R40
-Z55 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/pwm_middleman.vhd|
-Z56 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/pwm_middleman.vhd|
+R10
+Z65 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/pwm_middleman.vhd|
+Z66 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/pwm_middleman.vhd|
 !i113 0
-R12
 R13
+R14
 Astructural
 R2
 R3
@@ -408,38 +437,38 @@ l42
 L21
 VzSPi7H8K2nceIU:VWzZbP3
 !s100 6[AA^WC6]_fC4_2_O9ehY0
-R7
+R8
 32
-R34
+R9
 !i10b 1
-R40
-R55
-R56
+R10
+R65
+R66
 !i113 0
-R12
 R13
+R14
 Ereg
-Z57 w1732867579
+Z67 w1732867579
 R2
 R3
 R4
-R0
-Z58 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/register.vhd
-Z59 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/register.vhd
+R5
+Z68 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/register.vhd
+Z69 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/register.vhd
 l0
 L5
 VMBiNl_Z9PVQYe=iPn6]^O3
 !s100 eKhB<b964M;OWSW<nOWE61
-R7
+R8
 32
-R34
+R9
 !i10b 1
-R40
-Z60 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/register.vhd|
-Z61 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/register.vhd|
+R10
+Z70 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/register.vhd|
+Z71 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/register.vhd|
 !i113 0
-R12
 R13
+R14
 Abehavioural
 R2
 R3
@@ -449,95 +478,95 @@ l17
 L15
 V[zblKA]<?C7`5zafiL?lS0
 !s100 [Mnj2QYEE<S_2N6iGz4^L0
-R7
+R8
 32
-R34
+R9
 !i10b 1
-R40
-R60
-R61
+R10
+R70
+R71
 !i113 0
-R12
 R13
+R14
 Eyour_boss
-Z62 w1733481517
+Z72 w1734009223
 R2
 R3
 R4
-R0
-Z63 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/your_boss.vhd
-Z64 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/your_boss.vhd
+R5
+Z73 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/your_boss.vhd
+Z74 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/your_boss.vhd
 l0
 L5
-VkW[Udi<hUSg?4<VC^R]mD3
-!s100 :0DI4DDSEKlGgX@XfFzzY2
-R7
+V8Gj0PSCT1_]SF0EQQjY;52
+!s100 <>VUBG3AC`XecBUg2:R8l1
+R8
 32
-Z65 !s110 1733487031
+R43
 !i10b 1
-Z66 !s108 1733487031.000000
-Z67 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/your_boss.vhd|
-Z68 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/your_boss.vhd|
+Z75 !s108 1734028418.000000
+Z76 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/your_boss.vhd|
+Z77 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/your_boss.vhd|
 !i113 0
-R12
 R13
+R14
 Astructural
 R2
 R3
 R4
-DEx4 work 9 your_boss 0 22 kW[Udi<hUSg?4<VC^R]mD3
+DEx4 work 9 your_boss 0 22 8Gj0PSCT1_]SF0EQQjY;52
 32
-R65
-l102
-L17
-VMo7UDnV?9`zRFCTjQ4NXU2
-!s100 JdmHiggbYcfA9zbP_V`F81
-R7
+R43
+l103
+L18
+V>_i5FL@2SbWLKOSbfjHZ@2
+!s100 EY9>::7fdNX3;B:YKCcJ60
+R8
 !i10b 1
-R66
-R67
-R68
+R75
+R76
+R77
 !i113 0
-R12
 R13
+R14
 Eyour_boss_tb
-Z69 w1733486835
+Z78 w1734015271
 R2
 R3
 R4
-R0
-Z70 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/your_boss_tb.vhd
-Z71 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow/your_boss_tb.vhd
+R5
+Z79 8C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/your_boss_tb.vhd
+Z80 FC:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/your_boss_tb.vhd
 l0
 L5
 VlCo5I[@A7?<2P`bZX]R7[0
 !s100 VX08ITnPAh3P[9e`RF>E>2
-R7
+R8
 32
-R34
+R43
 !i10b 1
-R40
-Z72 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/your_boss_tb.vhd|
-Z73 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow/your_boss_tb.vhd|
+R75
+Z81 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/your_boss_tb.vhd|
+Z82 !s107 C:/Users/Zian Liu/Desktop/Digital_systems/VHDL_line_following/find_and_follow/your_boss_tb.vhd|
 !i113 0
-R12
 R13
+R14
 Astructural
 R2
 R3
 R4
-Z74 DEx4 work 12 your_boss_tb 0 22 lCo5I[@A7?<2P`bZX]R7[0
-l25
-L8
-Z75 VRm]F]D2T6Gb0;I2<MiQBb1
-Z76 !s100 UzTm?X[KdiM670WhSMJ<A1
-R7
+DEx4 work 12 your_boss_tb 0 22 lCo5I[@A7?<2P`bZX]R7[0
 32
-R34
+R43
+l26
+L8
+VQmWA3XKAEfBGYL:VmEYL82
+!s100 [9?A[UY8d[:9L1J1J4NFB3
+R8
 !i10b 1
-R40
-R72
-R73
+R75
+R81
+R82
 !i113 0
-R12
 R13
+R14

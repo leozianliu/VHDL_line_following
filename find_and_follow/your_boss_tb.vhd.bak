@@ -34,10 +34,10 @@ reset <= '0' after 0 ns, '1' after 10 ns,
 sensor_in <= "101" after 0 ns, -- 1 is white, 0 is black
              "101" after 60 ns,
              "010" after 90 ns,
-             "111" after 120 ns, 
-             "101" after 160 ns, 
-             "000" after 200 ns, -- RIGHT
-             "101" after 240 ns, 
+             "111" after 120 ns, -- wbw
+             "101" after 160 ns, -- www
+             "000" after 200 ns, -- bwb  RIGHT
+             "101" after 240 ns, -- wbw
 	     	"010" after 260 ns,
 		 	"111" after 300 ns,
 		 	"101" after 340 ns,
