@@ -8,6 +8,15 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Zian Liu/Desktop/chpt7/find_and_follow
+T_opt
+!s110 1734028887
+VU>T`:Wkk8<4IRE6aZHPL30
+04 12 10 work your_boss_tb structural 1
+=1-745d229c4709-675b2e57-4a-c284
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;10.6g;65
 Eadder
 Z1 w1732867578
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
@@ -22,9 +31,9 @@ VzLfDVe<]Q:OYSMfNdbkff2
 !s100 o2OT3cPbho:b?zI=WJ`d^0
 Z8 OL;C;10.6g;65
 32
-Z9 !s110 1734027489
+Z9 !s110 1734028878
 !i10b 1
-Z10 !s108 1734027489.000000
+Z10 !s108 1734028878.000000
 Z11 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/adder_but_cooler.vhd|
 Z12 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/adder_but_cooler.vhd|
 !i113 0
@@ -35,13 +44,13 @@ R2
 R3
 R4
 DEx4 work 5 adder 0 22 zLfDVe<]Q:OYSMfNdbkff2
-32
-R9
 l14
 L12
 Vj1Ie0[_9d5O^3eTc4]C921
 !s100 nZPab1bU;zE@XQNlFMF@G2
 R8
+32
+R9
 !i10b 1
 R10
 R11
@@ -74,13 +83,13 @@ Abehavioral
 R3
 R4
 DEx4 work 13 bit3_register 0 22 zeW4HLzaYL>`k98Z1eD_J1
-32
-R9
 l14
 L13
 VL_eQHA]@Zn50i6h?OTB9C2
 !s100 CYjH3McTN6CDPC9FJ7RV12
 R8
+32
+R9
 !i10b 1
 R10
 R18
@@ -113,13 +122,13 @@ Astructural
 R3
 R4
 DEx4 work 13 buffer_entity 0 22 O][NJ9RDTF6l`HX2ff]Q=0
-32
-R9
 l25
 L13
 V4f<9a@fEaP@aZ[]`NZ;9T1
 !s100 ?DR8L?Yi8PAP4IkHS5[Hi0
 R8
+32
+R9
 !i10b 1
 R10
 R22
@@ -154,13 +163,13 @@ R2
 R3
 R4
 DEx4 work 7 counter 0 22 :[[XK6knM_hn^Q@Nk>Po53
-32
-R9
 l30
 L14
 VAbSn?Yo;m53[Cfb;bHo6^2
 !s100 FmBPT[BfVU?mbFkFFPP@=2
 R8
+32
+R9
 !i10b 1
 R10
 R26
@@ -181,11 +190,11 @@ V4gfcWC?cN;?jH<b^_E`3M2
 !s100 Z:Cgfi16_>f[fJzE6_2@g2
 R8
 32
-R9
+Z31 !s110 1734028879
 !i10b 1
-R10
-Z31 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/critic_sel.vhd|
-Z32 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/critic_sel.vhd|
+Z32 !s108 1734028879.000000
+Z33 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/critic_sel.vhd|
+Z34 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/critic_sel.vhd|
 !i113 0
 R13
 R14
@@ -193,38 +202,38 @@ Abehavioral
 R3
 R4
 DEx4 work 10 critic_sel 0 22 4gfcWC?cN;?jH<b^_E`3M2
-32
-R9
 l15
 L14
 V4Kj=kP^EHF>ak1HV6=jTX1
 !s100 UlZ=DfRBAJH^Bl;`KkDoP2
 R8
-!i10b 1
-R10
+32
 R31
+!i10b 1
 R32
+R33
+R34
 !i113 0
 R13
 R14
 Eline_finder
-Z33 w1734027338
+Z35 w1734027338
 R3
 R4
 R5
-Z34 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/line_finder.vhd
-Z35 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/line_finder.vhd
+Z36 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/line_finder.vhd
+Z37 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/line_finder.vhd
 l0
 L4
 VK>TV8_XNkD2l_Ua]_6O@?1
 !s100 _`;2bH5IFFe0P>R:FXoKT0
 R8
 32
-Z36 !s110 1734027490
+R31
 !i10b 1
-R10
-Z37 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/line_finder.vhd|
-Z38 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/line_finder.vhd|
+R32
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/line_finder.vhd|
+Z39 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/line_finder.vhd|
 !i113 0
 R13
 R14
@@ -232,37 +241,37 @@ Abehavioural
 R3
 R4
 DEx4 work 11 line_finder 0 22 K>TV8_XNkD2l_Ua]_6O@?1
-32
-R36
 l26
 L21
 V:2B1YQkz[?G=enFGf5R:?2
 !s100 DU?I6[[zKFF=1biROWn3;1
 R8
+32
+R31
 !i10b 1
-R10
-R37
+R32
 R38
+R39
 !i113 0
 R13
 R14
 Eline_follower
-Z39 w1734025372
+Z40 w1734025372
 R2
 R3
 R4
 R5
-Z40 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/turn.vhd
-Z41 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/turn.vhd
+Z41 8C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/turn.vhd
+Z42 FC:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/turn.vhd
 l0
 L5
 VgJb6@gUPh4JIL^l1UQKz43
 !s100 mMA`7gEbXeJ0V1hfPN63[2
 R8
 32
-R36
+R31
 !i10b 1
-Z42 !s108 1734027490.000000
+R32
 Z43 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/turn.vhd|
 Z44 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/turn.vhd|
 !i113 0
@@ -273,15 +282,15 @@ R2
 R3
 R4
 DEx4 work 13 line_follower 0 22 gJb6@gUPh4JIL^l1UQKz43
-32
-R36
 l34
 L27
 VOG^2S>g0]c=EW`CPZ@8>H1
 !s100 Zj8c60dBJh_I_>L4KmCdE1
 R8
+32
+R31
 !i10b 1
-R42
+R32
 R43
 R44
 !i113 0
@@ -300,9 +309,9 @@ VGH9V1HH=9]cfGbUGO2>6X2
 !s100 SC5n]DDi7N2QOc7:EFjGh2
 R8
 32
-R36
+R31
 !i10b 1
-R42
+R32
 Z48 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/mux2.vhd|
 Z49 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/mux2.vhd|
 !i113 0
@@ -312,15 +321,15 @@ Abehavioral
 R3
 R4
 DEx4 work 4 mux2 0 22 GH9V1HH=9]cfGbUGO2>6X2
-32
-R36
 l12
 L11
 V7U5I2W1J<dSiN7O86VThS2
 !s100 TMP<bIGE2LUEF6nMg>a1O2
 R8
+32
+R31
 !i10b 1
-R42
+R32
 R48
 R49
 !i113 0
@@ -379,9 +388,9 @@ V]hCmY7SRnOHPMKIjWFI;c2
 !s100 KFMa`]n]jXT67bUlK>RZz1
 R8
 32
-R36
+R31
 !i10b 1
-R42
+R32
 Z59 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/pwm.vhd|
 Z60 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/pwm.vhd|
 !i113 0
@@ -392,15 +401,15 @@ R2
 R3
 R4
 DEx4 work 13 pwm_generator 0 22 ]hCmY7SRnOHPMKIjWFI;c2
-32
-R36
 l22
 L14
 VfZcA=ZlgSi1VUTQ7;:^ML0
 !s100 jf;>z4ShTW5llXalbdJQW1
 R8
+32
+R31
 !i10b 1
-R42
+R32
 R59
 R60
 !i113 0
@@ -420,9 +429,9 @@ VS9TAn3P[8d`T0R]JcLg8T3
 !s100 dfY:B`W2mcS7k7eXN?z>g2
 R8
 32
-R36
+R31
 !i10b 1
-R42
+R32
 Z64 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/pwm_middleman.vhd|
 Z65 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/pwm_middleman.vhd|
 !i113 0
@@ -433,15 +442,15 @@ R2
 R3
 R4
 DEx4 work 13 pwm_middleman 0 22 S9TAn3P[8d`T0R]JcLg8T3
-32
-R36
 l42
 L21
 VzSPi7H8K2nceIU:VWzZbP3
 !s100 6[AA^WC6]_fC4_2_O9ehY0
 R8
+32
+R31
 !i10b 1
-R42
+R32
 R64
 R65
 !i113 0
@@ -461,9 +470,9 @@ VMBiNl_Z9PVQYe=iPn6]^O3
 !s100 eKhB<b964M;OWSW<nOWE61
 R8
 32
-R36
+R31
 !i10b 1
-R42
+R32
 Z69 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/register.vhd|
 Z70 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/register.vhd|
 !i113 0
@@ -474,15 +483,15 @@ R2
 R3
 R4
 DEx4 work 3 reg 0 22 MBiNl_Z9PVQYe=iPn6]^O3
-32
-R36
 l17
 L15
 V[zblKA]<?C7`5zafiL?lS0
 !s100 [Mnj2QYEE<S_2N6iGz4^L0
 R8
+32
+R31
 !i10b 1
-R42
+R32
 R69
 R70
 !i113 0
@@ -502,9 +511,9 @@ VLA0=?j2N22GYTn:G8YKLa1
 !s100 7`CPA1VE_i[7kbNIHSSSh3
 R8
 32
-R36
+R31
 !i10b 1
-R42
+R32
 Z74 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/your_boss.vhd|
 Z75 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/your_boss.vhd|
 !i113 0
@@ -515,15 +524,15 @@ R2
 R3
 R4
 DEx4 work 9 your_boss 0 22 LA0=?j2N22GYTn:G8YKLa1
-32
-R36
 l110
 L20
 V0XzSdC0ENZU0n>o;kLWLJ1
 !s100 BK=k9hnRKY>h5OcMdP]Ul1
 R8
+32
+R31
 !i10b 1
-R42
+R32
 R74
 R75
 !i113 0
@@ -543,9 +552,9 @@ VlCo5I[@A7?<2P`bZX]R7[0
 !s100 VX08ITnPAh3P[9e`RF>E>2
 R8
 32
-R36
+R31
 !i10b 1
-R42
+R32
 Z79 !s90 -reportprogress|300|-work|work|C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/your_boss_tb.vhd|
 Z80 !s107 C:/Users/Zian Liu/Desktop/chpt7/find_and_follow_turn_stop/your_boss_tb.vhd|
 !i113 0
@@ -556,15 +565,15 @@ R2
 R3
 R4
 DEx4 work 12 your_boss_tb 0 22 lCo5I[@A7?<2P`bZX]R7[0
-32
-R36
 l28
 L8
 VCgGYk3a1dHOM55MgMe^g;0
 !s100 >`E^VCQNlYmPg3iXB0F@C1
 R8
+32
+R31
 !i10b 1
-R42
+R32
 R79
 R80
 !i113 0
